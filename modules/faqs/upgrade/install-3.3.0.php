@@ -1,0 +1,10 @@
+<?php
+
+if (!defined('_PS_VERSION_')) {
+  exit;
+}
+
+function upgrade_module_3_3_0($object)
+{
+    return $object->upgradeFaqs3_3_0();
+}
