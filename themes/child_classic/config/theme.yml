@@ -1,0 +1,15 @@
+parent: classic
+name: child_classic
+display_name: Child theme of classic's theme
+version: 1.0.0
+assets:
+  use_parent_assets: true 
+
+  css:
+    all:
+      - path: 'themes/child_classic/assets/css/owl.carousel.min.css'
+      - path: 'themes/child_classic/assets/css/owl.theme.default.min.css'
+
+  js:
+    all:
+      - path: 'themes/child_classic/assets/js/owl.carousel.min.js'

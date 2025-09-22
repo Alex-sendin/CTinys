@@ -1,0 +1,162 @@
+
+#gomakoil_faq_form #link_rewrite, #gomakoil_faq_category_form #link_rewrite{
+  width: 75% ;
+}
+
+@media (max-width: 1200px){
+  #gomakoil_faq_form #link_rewrite, #gomakoil_faq_category_form #link_rewrite{
+    width: 100% ;
+  }
+}
+.support_tab_content .col-lg-offset-3{
+  width: 100%;
+  margin-left: 0px;
+}
+#gomakoil_faq_settings_form .line{
+  border-bottom: 1px solid #dadada;
+  padding: 0 0 10px 0;
+}
+.input_disabled_faqs input{
+  width: 200px !important;
+}
+#gomakoil_faq_settings_form .button_faqs
+,#gomakoil_faq_settings_form .categories_faq
+,#gomakoil_faq_settings_form .featured_faq{
+  display: none;
+}
+.block_add_selected_product{
+  width: 150px !important;
+  float: left;
+}
+.block_add_selected_product .col-lg-9{
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+.block_line_after_form{
+  width: 100%;
+  border-bottom: 2px solid #dadada;
+  clear: both;
+}
+.block_add_selected_product .add_products_item i{
+  margin-right: 8px;
+}
+.product-pack-button{
+  float: left;
+}
+
+.table_product_list{
+  width: 100%;
+}
+.table_product_list thead tr th {
+  border-bottom: solid 1px #a0d0eb;
+  border-top: solid 1px #a0d0eb;
+  background-color: #ecf6fb;
+  padding: 10px;
+}
+.table_product_list tbody tr.odd {
+  background-color: #FCFDFE !important;
+}
+.table_product_list tr td {
+  border-bottom: solid 1px #EAEDEF;
+  padding: 10px;
+}
+.table_list_id {
+  width: 5%;
+  text-align: center;
+}
+.table_list_img {
+  width: 10%;
+}
+.table_list_name {
+  width: 75%;
+}
+.table_list_delete {
+  width: 10%;
+}
+.table_list_img img {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  max-width: 55px;
+  height: auto;
+}
+.block_more_settings.hide_form_settings{
+  display: none;
+}
+
+#faqs_home_page_limit,
+#featured_footer_count,
+#product_category_assoc_faqs_limit,
+#seo_home_page,
+#num_of_faq_in_cat_block,
+#categoryBox_chosen {
+  width: 200px !important;
+}
+
+.textarea_block .mce-tinymce{
+  border: 1px solid #C7D6DB !important;
+}
+
+.field_width_50 .col-lg-9 {
+  width: 50%;
+}
+
+.faqs-new-question-link-rewrite-form-group .input-group-addon,
+.faqs-new-category-link-rewrite-form-group .input-group-addon {
+  padding: 0;
+  border: none;
+}
+
+.reset-link-rewrite-btn {
+  outline: none !important;
+  border-left: none !important;
+  border-radius: 0 3px 3px 0 !important;
+}
+
+.reset-link-rewrite-btn:focus {
+  background-color: unset;
+}
+
+.consent_checkbox_message_textarea {
+  display: none;
+}
+
+.consent_checkbox_message_textarea textarea {
+  min-height: 100px;
+  height: 100px;
+}
+
+.faqs_list .table_checkbox {
+  width: 60px;
+}
+
+.faqs_list .table_id {
+  width: 60px;
+}
+
+.faqs_list .table_name {
+  width: calc(100% -  120px);
+}
+.faqs_list table.table thead tr th {
+  border-bottom: solid 0.125rem #25b9d7;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.faqs_list table.table {
+  border: 1px solid #bbcdd2;
+  border-radius: 5px;
+}
+.faqs_list table.table tbody tr td p,
+.faqs_list table.table tbody tr td label {
+  margin: 0px;
+  cursor: pointer;
+}
+.faqs_list table.table tbody {
+
+}
+.faqs_list table.table tbody tr td {
+  padding:  10px;
+  cursor: pointer;
+}
