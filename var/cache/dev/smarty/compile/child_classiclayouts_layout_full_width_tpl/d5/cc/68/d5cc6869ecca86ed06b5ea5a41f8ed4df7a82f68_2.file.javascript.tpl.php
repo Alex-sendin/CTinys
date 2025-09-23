@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-21 22:20:10
+/* Smarty version 4.3.4, created on 2025-09-23 09:25:25
   from 'C:\xampp\htdocs\ctinys\themes\classic\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d05dfa37e075_17327232',
+  'unifunc' => 'content_68d24b65d7a4c7_13258791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5cc6869ecca86ed06b5ea5a41f8ed4df7a82f68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ctinys\\themes\\classic\\templates\\_partials\\javascript.tpl',
-      1 => 1758392560,
+      1 => 1758608447,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d05dfa37e075_17327232 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68d24b65d7a4c7_13258791 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\ctinys\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 $_smarty_tpl->tpl_vars['js']->do_else = true;

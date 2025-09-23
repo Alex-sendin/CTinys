@@ -38,60 +38,35 @@ class TinysLandings extends Module
     }
     
     public function hookModuleRoutes($params)
-    {
-        return [
-            'tinys-fidget-figuras-articuladas' => [
-                'controller' => 'tinyslanding',
-                'rule' => 'fidget-figuras-articuladas',
-                'keywords' => [],
-                'params' => [
-                    'fc' => 'module',
-                    'module' => $this->name,
-                    'page' => 'fidget-figuras-articuladas',
-                ],
-            ],
-            'tinys-miniaturas' => [
-                'controller' => 'tinyslanding',
-                'rule' => 'miniaturas',
-                'keywords' => [],
-                'params' => [
-                    'fc' => 'module',
-                    'module' => $this->name,
-                    'page' => 'miniaturas',
-                ],
-            ],
-            'tinys-figuras-coleccionables' => [
-                'controller' => 'tinyslanding',
-                'rule' => 'figuras-coleccionables',
-                'keywords' => [],
-                'params' => [
-                    'fc' => 'module',
-                    'module' => $this->name,
-                    'page' => 'figuras-coleccionables',
-                ],
-            ],
-            'tinys-material-tea' => [
-                'controller' => 'tinyslanding',
-                'rule' => 'material-tea',
-                'keywords' => [],
-                'params' => [
-                    'fc' => 'module',
-                    'module' => $this->name,
-                    'page' => 'material-tea',
-                ],
-            ],
-            'tinys-regalo-ninos' => [
-                'controller' => 'tinyslanding',
-                'rule' => 'regalo-ninos',
-                'keywords' => [],
-                'params' => [
-                    'fc' => 'module',
-                    'module' => $this->name,
-                    'page' => 'regalo-ninos',
-                ],
-            ],
-        ];
+{
+    $routes = [];
+
+    $jsonFilePath = _PS_MODULE_DIR_ . $this->name . '/assets/json/data.json';
+    
+    if (file_exists($jsonFilePath)) {
+        $jsonContent = file_get_contents($jsonFilePath);
+        $landingPages = json_decode($jsonContent, true);
+
+        if (!empty($landingPages)) {
+            foreach ($landingPages['landings'] as $page) {
+                $pageName = $page['page_name'];
+
+                $routes[$pageName] = [
+                    'controller' => 'tinyslanding',
+                    'rule' => $pageName,
+                    'keywords' => [],
+                    'params' => [
+                        'fc' => 'module',
+                        'module' => $this->name,
+                        'page' => $pageName,
+                    ],
+                ];
+            }
+        }
     }
+
+    return $routes;
+}
 
     public function hookDisplayHeader()
     {

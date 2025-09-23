@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-21 22:20:13
+/* Smarty version 4.3.4, created on 2025-09-23 09:25:27
   from 'module:blockwishlistviewstemplatescomponentsmodalslogin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d05dfd13f4f1_45317087',
+  'unifunc' => 'content_68d24b67459a29_06386327',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99ff6f99ecd074931a71deddfe65081482db8401' => 
     array (
       0 => 'module:blockwishlistviewstemplatescomponentsmodalslogin.tpl',
-      1 => 1758392514,
+      1 => 1758608427,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d05dfd13f4f1_45317087 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68d24b67459a29_06386327 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin C:\xampp\htdocs\ctinys/modules/blockwishlist/views/templates/components/modals/login.tpl -->
 <div
   class="wishlist-login"
