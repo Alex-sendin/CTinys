@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>tinyslandings</name>
+    <displayName><![CDATA[TinysLandings]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[A module to display tinys SEO landings]]></description>
+    <author><![CDATA[Ecoitec]]></author>
+    <tab><![CDATA[]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+</module>
