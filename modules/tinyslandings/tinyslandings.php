@@ -11,7 +11,7 @@ class TinysLandings extends Module
         $this->name = 'tinyslandings';
         $this->tab = 'front_office_features';
         $this->version = '1.0.0';
-        $this->author = 'Tu Nombre';
+        $this->author = 'Ecoitec';
         $this->need_instance = 0;
         $this->bootstrap = true;
 
@@ -49,7 +49,7 @@ class TinysLandings extends Module
 
         if (!empty($landingPages)) {
             foreach ($landingPages['landings'] as $page) {
-                $pageName = $page['page_name'];
+                $pageName = $page['url'];
 
                 $routes[$pageName] = [
                     'controller' => 'tinyslanding',

@@ -2,18 +2,6 @@
 
 class TinysLandingsTinysLandingModuleFrontController extends ModuleFrontController
 {
-
-    private function assignPageContent($metaTitle, $metaDescription, $className, $primaryContent, $secondaryContent)
-    {
-        $this->context->smarty->assign([
-            'meta_title' => $metaTitle,
-            'meta_description' => $metaDescription,
-            'class_name' => $className,
-            'primary_content' => $primaryContent,
-            'secondary_content' => $secondaryContent,
-        ]);
-    }
-
     public function initContent()
     {
         parent::initContent();
@@ -37,23 +25,17 @@ class TinysLandingsTinysLandingModuleFrontController extends ModuleFrontControll
         // Paso 2: Buscar el case en los datos del JSON
         $pageData = null;
         foreach ($landingPages['landings'] as $page) {
-            if ($page['page_name'] === $pageName) {
+            if ($page['url'] === $pageName) {
                 $pageData = $page;
                 break;
             }
         }
-        
-        // Paso 3: Asignar el contenido a Smarty
+
         if ($pageData) {
-            $this->assignPageContent(
-                $pageData['meta_title'],
-                $pageData['meta_description'],
-                $pageData['class_name'],
-                $pageData['primary_content'],
-                $pageData['secondary_content']
-            );
+            $this->context->smarty->assign('page_data', $pageData);
             $this->setTemplate('module:tinyslandings/views/templates/front/layout_landings.tpl');
-        } else {
+        } 
+        else {
             // Manejar el caso si el 'pageName' no se encuentra en el JSON
             header('HTTP/1.1 404 Not Found');
             header('Status: 404 Not Found');
