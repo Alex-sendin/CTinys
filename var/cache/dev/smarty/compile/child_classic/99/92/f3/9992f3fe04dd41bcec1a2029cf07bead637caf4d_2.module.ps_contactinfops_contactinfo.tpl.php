@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-23 16:35:40
+/* Smarty version 4.3.4, created on 2025-09-24 16:54:34
   from 'module:ps_contactinfops_contactinfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d2b03ca244b4_93233294',
+  'unifunc' => 'content_68d4062a5fe4b7_48549588',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d2b03ca244b4_93233294 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68d4062a5fe4b7_48549588 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\ctinys\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
@@ -51,19 +51,19 @@ echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUG
 
     <?php }?>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_108849346768d2b03ca23131_54000771', "contact-us");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_208589048768d4062a5fd183_76893109', "contact-us");
 ?>
 
           </div>
 </div>
 <!-- end C:\xampp\htdocs\ctinys/themes/child_classic/modules/ps_contactinfo/ps_contactinfo.tpl --><?php }
 /* {block "contact-us"} */
-class Block_108849346768d2b03ca23131_54000771 extends Smarty_Internal_Block
+class Block_208589048768d4062a5fd183_76893109 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'contact-us' => 
   array (
-    0 => 'Block_108849346768d2b03ca23131_54000771',
+    0 => 'Block_208589048768d4062a5fd183_76893109',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

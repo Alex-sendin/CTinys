@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-23 16:13:06
+/* Smarty version 4.3.4, created on 2025-09-24 16:54:32
   from 'C:\xampp\htdocs\ctinys\modules\psxdesign\views\templates\hook\displayFontTags.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d2aaf21bea68_13908017',
+  'unifunc' => 'content_68d40628eefe62_18402995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d2aaf21bea68_13908017 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68d40628eefe62_18402995 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

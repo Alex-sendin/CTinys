@@ -68,10 +68,14 @@ class TinysLandings extends Module
     return $routes;
 }
 
-    public function hookDisplayHeader()
-    {
+public function hookDisplayHeader()
+{
+    $controller = $this->context->controller;
+    $controllerName = isset($controller->module) ? $controller->module->name : null;
+    if (isset($controllerName) && $controllerName == 'tinyslandings') {
         $this->context->controller->addCSS($this->_path.'views/css/front.css');
     }
+}
     public function hookDisplayTinysLandingProductsCarousel(){}
     public function hookDisplayTinysLandingContentCards(){}
 }

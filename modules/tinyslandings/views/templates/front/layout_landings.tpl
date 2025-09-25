@@ -26,7 +26,8 @@
     <section class="tinys-landing-content-cards container-fluid">
         {hook h='displayTinysLandingContentCards'}
     </section>
-
+    <section class="{$page_data.class_name} tinys-landing-content-image">
+    </section>
     <section class="tinys-landing-terciary-content container">
         {$page_data.terciary_content nofilter}
     </section>
