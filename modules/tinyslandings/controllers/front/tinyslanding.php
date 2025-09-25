@@ -33,7 +33,7 @@ class TinysLandingsTinysLandingModuleFrontController extends ModuleFrontControll
 
         if ($pageData) {
             $this->context->smarty->assign('page_data', $pageData);
-            $this->setTemplate('module:tinyslandings/views/templates/front/layout_landings.tpl');
+            $this->setTemplate('module:tinyslandings/views/templates/front/'.$pageData['template']);
         } 
         else {
             // Manejar el caso si el 'pageName' no se encuentra en el JSON

@@ -59,6 +59,9 @@
 		      <div class="banner-home">
           </div>
         {/block}
+        {block name='dragon-counter'}
+          {hook h='displayHome' mod='eco_countertinys'}
+        {/block}
         {block name='two-column-home'}
           <div class="two-columns home-section">
             <div class="two-columns-home-text">
