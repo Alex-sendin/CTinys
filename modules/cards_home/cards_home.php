@@ -23,8 +23,7 @@ class Cards_Home extends Module{
 
     public function install(){
         return parent::install() 
-        && $this->registerHook('displayHome') && $this->registerHook('displayHeader')
-        && $this->registerHook('displayTinysLandingContentCards');
+        && $this->registerHook('displayHome') && $this->registerHook('displayHeader');
     }   
 
     public function uninstall(){

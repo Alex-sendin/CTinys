@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-26 08:02:35
+/* Smarty version 4.3.4, created on 2025-09-26 13:40:09
   from 'C:\xampp\htdocs\ctinys\modules\faqs\views\templates\front\all_versions\jsonjd.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d62c7bea3ad3_71178133',
+  'unifunc' => 'content_68d67b997fa9e9_29979055',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d62c7bea3ad3_71178133 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68d67b997fa9e9_29979055 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php if (!empty($_smarty_tpl->tpl_vars['categories']->value) && !empty($_smarty_tpl->tpl_vars['categories']->value[0]['faqs'])) {?>
