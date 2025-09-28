@@ -1,5 +1,4 @@
 <div class="eco-counter-container">
-    <h2 class="eco-counter-title">{l s='Tiempo transcurrido desde que el producto fue encontrado' mod='eco_countertinys'}</h2>
     <div id="eco-counter-display" class="eco-counter-display">
         <div class="eco-counter-unit">
             <span id="eco-counter-months" class="eco-counter-value">0</span>
@@ -36,7 +35,6 @@
                 var difference = now - startTimestamp;
                 
                 if (difference > 0) {
-                    // Lógica para calcular meses, días, horas, minutos y segundos
                     var seconds = Math.floor(difference / 1000);
                     var minutes = Math.floor(seconds / 60);
                     var hours = Math.floor(minutes / 60);
@@ -58,7 +56,7 @@
                     document.getElementById('eco-counter-minutes').innerHTML = minutes;
                     document.getElementById('eco-counter-seconds').innerHTML = seconds;
                 }
-            }, 1000); // Actualiza cada segundo
+            }, 1000);
         }
     });
 </script>

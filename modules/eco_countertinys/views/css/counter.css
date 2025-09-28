@@ -1,41 +1,64 @@
 .eco-counter-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #e5e5e5;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    margin: 20px 0;
-}
-
-.eco-counter-title {
-    font-size: 24px;
-    color: #4a4a4a;
-    margin-bottom: 20px;
+    /* background-image: url('../img/banner-dragon-countdown.webp'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .eco-counter-display {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 3rem;
+    color: #FFF;
+    padding: 3rem;
+}
+.eco-counter-unit {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f95701, #fc9e03, #ffd700);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.eco-counter-unit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.eco-counter-unit::before,
+.eco-counter-unit::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 8px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #1e2a4a;
+}
+
+.eco-counter-unit::before {
+  left: 10px;
+}
+
+.eco-counter-unit::after {
+  right: 10px;
 }
 
 .eco-counter-value {
-    font-size: 48px;
-    font-weight: bold;
-    color: #007bff;
-    line-height: 1;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: -10px;
 }
 
 .eco-counter-label {
-    font-size: 14px;
-    color: #888;
-    text-transform: uppercase;
-    margin-top: 5px;
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: absolute;
+  bottom: 12px;
 }
