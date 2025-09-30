@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-09-26 14:20:09
+/* Smarty version 4.3.4, created on 2025-09-30 15:27:55
   from 'C:\xampp\htdocs\ctinys\themes\classic\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68d684f90793b3_84045780',
+  'unifunc' => 'content_68dbdadb23d590_84797953',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68d684f90793b3_84045780 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68dbdadb23d590_84797953 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\ctinys\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 $_smarty_tpl->tpl_vars['js']->do_else = true;

@@ -1,4 +1,12 @@
 <div class="eco-counter-container">
+    <picture class="eco-counter-logo-container">
+        <source srcset="{$module_dir}views/img/background-golden-dragon-logo.webp" type="image/webp">
+        <img src="{$module_dir}views/img/background-golden-dragon-logo.webp" alt="{l s='Eco Counter Tinys' mod='eco_countertinys'}" class="eco-counter-logo">
+    </picture>
+    <picture class="eco-counter-text-container">
+        <source srcset="{$module_dir}views/img/background-golden-dragon-text.webp" type="image/webp">
+        <img src="{$module_dir}views/img/background-golden-dragon-text.webp" alt="{l s='Eco Counter Tinys' mod='eco_countertinys'}" class="eco-counter-text">
+    </picture>
     <div id="eco-counter-display" class="eco-counter-display">
         <div class="eco-counter-unit">
             <span id="eco-counter-months" class="eco-counter-value">0</span>

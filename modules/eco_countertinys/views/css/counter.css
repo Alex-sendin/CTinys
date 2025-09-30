@@ -1,22 +1,42 @@
 .eco-counter-container {
-    /* background-image: url('../img/banner-dragon-countdown.webp'); */
+    background-image: url(../img/background-golden-dragon-desktop.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    overflow: hidden;
 }
-
+.eco-counter-logo-container{
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../img/background-golden-dragon-fire.webp);
+}
+.eco-counter-text-container{
+  width: 20%;
+}
+.eco-counter-text-container img{
+  width: 100%;
+}
 .eco-counter-display {
     display: flex;
     justify-content: center;
     gap: 3rem;
     color: #FFF;
     padding: 3rem;
+    flex-wrap: wrap;
 }
 .eco-counter-unit {
   position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
+  width:6rem;
+  height:6rem;
+  border-radius:.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -24,6 +44,8 @@
   align-items: center;
   background: linear-gradient(to bottom, #f95701, #fc9e03, #ffd700);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight:bolder;
+  font-size:.8rem;
 }
 
 .eco-counter-unit::before,
@@ -46,19 +68,26 @@
 }
 
 .eco-counter-value {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-top: -10px;
+  font-size:2rem;
 }
 
 .eco-counter-label {
-  font-size: 0.85rem;
-  color: #ffffff;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  position: absolute;
-  bottom: 12px;
+  position: relative;
+  top:20%;
+}
+
+@media (max-width: 1140px) {
+  .eco-counter-container {
+    flex-direction:column;
+  }
+  .eco-counter-display {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .eco-counter-text-container{
+    width: 80%;
+  }
 }
